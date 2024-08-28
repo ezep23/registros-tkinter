@@ -1,5 +1,7 @@
 from tkinter import *
 import tkinter as tk
+from clientes import Clientes
+from registros import Registros
 from PIL import Image, ImageTk
 
 class Container (tk.Frame):
@@ -33,10 +35,10 @@ class Container (tk.Frame):
         welcome_label = tk.Label(frame1, text="SISTEMA DE GESTIÓN", fg="black", bg="#dddddd", font="sans 20 bold")
         welcome_label.place(x=100, y=40)
 
-        btnClientes = Button(frame1, bg="#000000", fg="white", text="Ir a clientes", command=self.clientes)
+        btnClientes = Button(frame1, bg="#000000", fg="white", text="Ir a Clientes", command=self.clientes)
         btnClientes.place(x=130, y=110, width=240, height=60)
 
-        btnRegistro = Button(frame1, bg="#000000", fg="white", text="Ir a registros", command=self.registros)
+        btnRegistro = Button(frame1, bg="#000000", fg="white", text="Ir a Registros", command=self.registros)
         btnRegistro.place(x=130, y=190, width=240, height=60)
         
         copyright_label = tk.Label(frame1, text="Creado por Ezequiel Pistone", bg="#dddddd", fg="black", font="sans 16 bold", anchor="center")
